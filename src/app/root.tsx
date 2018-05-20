@@ -1,3 +1,12 @@
-import { Component, h } from 'preact';
+import { h } from 'preact';
+import Header from './header';
+import Main from './main';
+import Footer from './footer';
 
-export default (props) => <h1>App</h1>
+export default () => (
+    <div>
+        <Header />
+        <Main />
+        <Footer />
+    </div>
+);
