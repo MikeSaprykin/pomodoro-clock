@@ -1,7 +1,7 @@
 import { h } from 'preact';
 
 export default () => (
-    <footer>
+    <footer class="app-footer">
         Footer
     </footer>
 );

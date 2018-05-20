@@ -2,4 +2,29 @@ body {
   background: tomato;
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 25px;
+  &-header {
+    display: flex;
+    justify-content: flex-end;
+    &__icon {
+      cursor: pointer;
+      font-size: 24px;
+    }
+    flex-grow: 1
+  }
+  &-main {
+    flex-grow: 5;
+  }
+  &-footer {
+    flex-grow: 1;
+  }
 }

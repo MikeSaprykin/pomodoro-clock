@@ -1,7 +1,9 @@
 import { h } from 'preact';
 
 export default () => (
-    <main>
-        Main
-    </main>
+  <main class="app-main">
+    <p>
+      Main
+    </p>
+  </main>
 )

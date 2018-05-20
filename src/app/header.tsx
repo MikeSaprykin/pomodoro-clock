@@ -1,9 +1,8 @@
 import { h } from 'preact';
 
 export default () => (
-    <header>
-        <span>
-            Charet
-        </span>
+    <header class="app-header">
+        <i class="icon-settings app-header__icon">
+        </i>
     </header>
 )

@@ -20,6 +20,7 @@
   "homepage": "https://github.com/MikeSaprykin/pomodoro-clock#readme",
   "devDependencies": {
     "@types/node": "^10.1.1",
+    "@types/ramda": "^0.25.29",
     "autoprefixer": "^8.5.0",
     "awesome-typescript-loader": "^5.0.0",
     "cross-env": "^5.1.5",
@@ -33,6 +34,7 @@
     "postcss-pxtorem": "^4.0.1",
     "preact": "^8.2.9",
     "preact-compat": "^3.18.0",
+    "ramda": "^0.25.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "tslint": "^5.10.0",
@@ -42,6 +44,6 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
-    "pug-html-loader": "^1.1.5"
+    "rxjs": "^6.1.0"
   }
 }

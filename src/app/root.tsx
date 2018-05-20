@@ -4,7 +4,7 @@ import Main from './main';
 import Footer from './footer';
 
 export default () => (
-    <div>
+    <div class="app">
         <Header />
         <Main />
         <Footer />
