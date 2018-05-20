@@ -1,15 +1,17 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWepbackPlugin = require("html-webpack-plugin");
+const { CheckerPlugin } = require('awesome-typescript-loader')
 const { join } = require('path');
 
 const { isProduction } = require('./env');
 
-const template = join('src', 'index.pug');
+const template = join('src', 'index.html');
 
 const commonPlugins = [
-  new HtmlWebpackPlugin({
+  new HtmlWepbackPlugin({
     template
-  })
+  }),
+  new CheckerPlugin()
 ];
 
 const developmentPlugins = [...commonPlugins];

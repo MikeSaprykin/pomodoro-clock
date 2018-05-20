@@ -2,14 +2,13 @@ const { mode, isProduction } = require('./config/env');
 const { loader } = require('mini-css-extract-plugin');
 const plugins = require('./config/plugins');
 
-const entry = './src/index.ts';
+const entry = './src/index.tsx';
 
 module.exports = {
   mode,
   entry,
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.scss$/,
         use: [
           isProduction ? loader : 'style-loader',
@@ -18,14 +17,17 @@ module.exports = {
         ]
       },
       {
-        test: /\.ts$/,
+        test: /\.(ts|tsx)$/,
         use: 'awesome-typescript-loader'
-      },
-      {
-        test: /\.pug/,
-        use: ['raw-loader', 'pug-html-loader']
       }
     ]
   },
-  plugins
+  plugins,
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.scss'],
+    alias: {
+      react: 'preact-compat',
+      'react-dom': 'preact-compat'
+    }
+  }
 };
