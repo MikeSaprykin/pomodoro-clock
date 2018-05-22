@@ -4,11 +4,15 @@ const plugins = require('./config/plugins');
 
 const entry = './src/index.tsx';
 
+/**
+ * ts-loader enabled, until awesome-typescript-loader is up to support webpack 4
+ */
 module.exports = {
   mode,
   entry,
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.scss$/,
         use: [
           isProduction ? loader : 'style-loader',
