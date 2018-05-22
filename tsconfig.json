@@ -15,7 +15,7 @@
       "@components/*": ["./app/components/*"],
       "@containers/*": ["./app/containers/*"]
     },
-    "typeRoots": ["node_modules/@types"],
+    "typeRoots": ["node_modules/@types", "src/index.d.ts"],
     "lib": ["es2017", "dom"]
   },
   "include": ["src/*.ts", "src/*.tsx"]
