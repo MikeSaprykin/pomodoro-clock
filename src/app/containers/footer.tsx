@@ -1,6 +1,5 @@
 import { h, FunctionalComponent } from 'preact';
-import FooterEl from '../components/Footer';
 
-const Footer: FunctionalComponent = () => <FooterEl>Footer</FooterEl>;
+const Footer: FunctionalComponent = () => <footer>Footer</footer>;
 
 export default Footer;
